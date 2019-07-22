@@ -4,16 +4,18 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="form-page">
 
   <header class="page-header">
     <a class="page-header__logo">
-      <img class="page-header__logo-image" src="#" width="#" height="#" alt="Кэт энерджи">
+      <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Кэт энерджи">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a href="index.html">Главная</a>
@@ -25,6 +27,7 @@
             <a>Подбор программы</a>
           </li>
         </ul>
+      </div>
     </nav>
   </header>
 
@@ -109,7 +112,7 @@
             </ul>
           </div>
 
-          <button class="main-form__button" type="submit">Отправить заявку</button>
+          <button class="main-form__button button--primary" type="submit">Отправить заявку</button>
           <p class="main-form__note">* - Обязательные поля</p>
         </form>
       </div>
@@ -117,21 +120,21 @@
 
     <section class="contacts">
       <div class="contacts__wrapper">
-        <h2 class="contacts__title">Контакты</h2>
+        <h2 class="visually-hidden">Контакты</h2>
         <p class="contacts__partnership">Приглашаем к сотрудничеству дилеров!</p>
         <p class="contacts__address">
           ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
         </p>
-        <img class="contacts__map" src="#" width="#" height="#" alt="Кэт Энерджи на карте">
+        <img class="contacts__map" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Кэт Энерджи на карте">
       </div>
     </section>
 
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__links links">
-      <p class="links__title"><b>Cat</b>Energy</p>
-    </div>
+    <a class="page-footer__links links">
+      <img class="links__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="Питание для котов Cat Energy">
+    </a>
     <div class="page-footer__social social">
       <ul class="social__list">
         <li class="social__item">
@@ -148,7 +151,7 @@
     <div class="page-footer__copyright copyright">
       <span class="copyright__text">HTML Academy</span>
       <a class="copyright__link">
-        <img class="copyright__img" src="#" width="#" height="#" alt="Логотип HTML Академии">
+        <img class="copyright__img" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Академии">
       </a>
     </div>
   </footer>
