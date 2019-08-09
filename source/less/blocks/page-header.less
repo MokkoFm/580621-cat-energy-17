@@ -1,3 +1,29 @@
 .page-header {
-  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header__wrapper {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.page-header__toggle {
+  width: 25px;
+  height: 25px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .page-header__wrapper {
+    width: 245px;
+  }
 }

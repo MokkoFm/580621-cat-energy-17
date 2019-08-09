@@ -4,11 +4,31 @@
 
 .info__list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 
   p {
     font-family: @arial;
     font-size: 14px;
     line-height: 18px;
     color: @text-grey;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .info__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  }
+
+  .info__list-item {
+    width: calc(50% - 30px);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .info__list-item {
+    width: calc(25% - 60px);
   }
 }

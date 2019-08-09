@@ -41,3 +41,27 @@
   font-weight: 400;
   color: @text-black;
 }
+
+@media (min-width: @tablet-width) {
+  .example {
+    background-color: @bg-white;
+  }
+
+  .example__description {
+    width: 600px;
+  }
+
+  .example__result {
+    text-align: right;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example {
+    background-color: @bg-grey;
+  }
+
+  .example__result {
+    text-align: left;
+  }
+}

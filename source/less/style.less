@@ -26,8 +26,44 @@
 
 .visually-hidden {
   position: absolute;
-  clip: rect(0 0 0 0);
+
   width: 1px;
   height: 1px;
   margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  min-width: 320px;
+  font-family: "Oswald", "Arial", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 320px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .container {
+  max-width: 768px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .container {
+  max-width: 1368px;
+  }
 }

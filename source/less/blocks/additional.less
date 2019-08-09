@@ -25,3 +25,53 @@
   font-family: @arial;
   color: @text-grey;
 }
+
+@media (min-width: @tablet-width) {
+  .additional__item {
+    width: 100%;
+    display: flex;
+  }
+
+  .additional__button {
+    flex-grow: 1;
+    display: flex;
+  }
+
+  .additional__table {
+    padding-left: 255px;
+    padding-top: 15px;
+  }
+
+  .additional__value {
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additional__button {
+    flex-grow: 0;
+  }
+
+  .additional__table {
+    padding-left: 160px;
+    width: 405px;
+  }
+
+  .additional__value {
+    padding-right: 110px;
+  }
+
+  .additional__good {
+    width: 180px;
+  }
+
+  .additional {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .additional__title {
+    width: 100%;
+  }
+}

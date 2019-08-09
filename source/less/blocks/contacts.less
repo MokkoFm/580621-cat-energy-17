@@ -1,5 +1,7 @@
 .contacts {
   background-color: @bg-white;
+  background: url("../img/bg-map-mobile@1x.png") no-repeat;
+  min-height: 400px;
 }
 
 .contacts__partnership {
@@ -15,4 +17,16 @@
   line-height: 20px;
   font-family: @arial;
   color: @text-grey;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts {
+  background: url("../img/bg-map-tablet@1x.png") no-repeat;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts {
+  background: url("../img/bg-map-desktop@1x.png") no-repeat;
+  }
 }
